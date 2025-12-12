@@ -1,6 +1,5 @@
 local redzlib =
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/
-Source.Lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/V5/Source.lua"))()
 local Window = redzlib:MakeWindow({
    Title = "redz Hub : Blox Fruits",
    SubTitle = "by redz9999",
@@ -2939,4 +2938,5 @@ task.spawn(function()
   hookfunction(error, function()end)
   hookfunction(warn, function()end)
 end)
+
 
