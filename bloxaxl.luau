@@ -7,7 +7,6 @@ local Window = redzlib:MakeWindow({
 })
 
 local AFKOptions = {}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huy384/redzHub/refs/heads/main/redzHub.lua"))()
 local Discord = Window:MakeTab({"Discord", "Info"})
 Discord:AddDiscordInvite({
    Name = "redz Hub | Community",
@@ -2940,3 +2939,4 @@ task.spawn(function()
 end)
 
 
+
