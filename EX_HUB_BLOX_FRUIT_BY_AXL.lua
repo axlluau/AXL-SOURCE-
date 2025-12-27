@@ -7,7 +7,7 @@ elseif game.PlaceId == 7449423635 then
 	World3 = true;
 end;
 
-local Update = (loadstring(Game:HttpGet("https://raw.githubusercontent.com/erasedDiablo/TrixSpoits/refs/heads/main/BloxFruit-CrackByme")))();
+local Update = (loadstring(Game:HttpGet("https://raw.githubusercontent.com/RTaOexe1/rtao_dev/refs/heads/main/RTaO_UI_1.lua")))();
 if Update:LoadAnimation() then
 	Update:StartLoad();
 end;
@@ -12011,4 +12011,5 @@ for _, v in pairs(resultNormal) do
 	end;
 end;
 print("Script Loaded!");
+
 
