@@ -1,4 +1,4 @@
-local redzlib =
+Sourcelib =
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/V5/Source.lua"))()
 local Window = redzlib:MakeWindow({
    Title = "redz Hub : Blox Fruits",
@@ -22,8 +22,8 @@ if Sea3 then
    local KILabel = AutoSea:AddParagraph({"Kitsune Island : not spawn"})
    AutoSea:AddToggle({Name = "Auto Kitsune Island",Callback = function(Value)
      getgenv().AutoKitsuneIsland = Value;AutoKitsuneIsland()
-   end})
-   AutoSea:AddToggle({Name = "Auto Trade Azure Ember",Callback = function(Value)
+   end}
+end  AutoSea:AddToggle({Name = "Auto Trade Azure Ember",Callback = function(Value)
      getgenv().TradeAzureEmber = Value
      task.spawn(function()
        local Modules = ReplicatedStorage:WaitForChild("Modules", 9e9)
@@ -34,8 +34,8 @@ if Sea3 then
          KitsuneRemote:InvokeServer()
       end
     end)
-  end})
-  task.spawn(function()
+  end}
+end task.spawn(function()
     local Map = workspace:WaitForChild("Map", 9e9)
     task.spawn(function()
       while task.wait() do
@@ -57,14 +57,14 @@ Map.KitsuneIsland.WorldPivot.p).Magnitude / 3))
       end
     end
   end)
-  AutoSea:AddSection({"Sea"})
+endAutoSea:AddSection({"Sea"})
   AutoSea:AddToggle({Name = "Auto Farm Sea",Callback = function(Value)
     getgenv().AutoFarmSea = Value;AutoFarmSea()
   end})
   AutoSea:AddButton({Name = "Buy New Boat",Callback = function()
     BuyNewBoat()
-  end})
-  AutoSea:AddSection({"Material"})
+  end}
+endoSeaoSea AutoSea:AddSection({"Material"})
   AutoSea:AddToggle({"Auto Wood Planks", false, function(Value)
     getgenv().AutoWoodPlanks = Value
     task.spawn(function()
@@ -146,13 +146,13 @@ then
          end
       end
     end)
-  end})
-  AutoSea:AddSection({"Panic Mode"})
+  end}
+AutoSeaoSea:AddSection({"Panic Mode"})
   AutoSea:AddSlider({Name = "Select Health",Min = 20,Max = 70,Default = 25,Callback
 = function(Value)
     getgenv().HealthPanic = Value
-  end})
-  AutoSea:AddToggle({"Panic Mode", true, function(Value)
+  end}
+AutoSeaoSea:AddToggle({"Panic Mode", true, function(Value)
     getgenv().PanicMode = Value
   end, "Sea/PanicMode"})
   AutoSea:AddSection({"Farm Select"})
@@ -2939,4 +2939,5 @@ task.spawn(function()
 end)
 
 
+
 
